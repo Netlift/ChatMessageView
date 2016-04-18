@@ -81,6 +81,7 @@ public class ChatMessageView extends RelativeLayout {
     
     public void setShowArrow(boolean show) {
         showArrow = show;
+        arrowImage.setVisibility(showArrow ? VISIBLE : INVISIBLE);
     }
     
     public void setBackgroundColorRes(@ColorRes int bgColorRes, @ColorRes int bgPressedColorRes) {
