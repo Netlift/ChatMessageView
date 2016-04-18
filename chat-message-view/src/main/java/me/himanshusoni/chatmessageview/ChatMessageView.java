@@ -78,7 +78,11 @@ public class ChatMessageView extends RelativeLayout {
     public void setArrowGravity(ArrowGravity gravity) {
         arrowGravity = gravity;
     }
-
+    
+    public void setShowArrow(boolean show) {
+        showArrow = show;
+    }
+    
     public void setBackgroundColorRes(@ColorRes int bgColorRes, @ColorRes int bgPressedColorRes) {
         backgroundColorPressed = ContextCompat.getColor(getContext(), bgPressedColorRes);
         backgroundColor = ContextCompat.getColor(getContext(), bgColorRes);
